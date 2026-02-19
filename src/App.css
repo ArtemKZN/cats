@@ -1,0 +1,162 @@
+
+.App {
+  text-align: center;
+  padding: 10px;
+}
+
+.Menu1{
+  display: block;
+  max-width: 250px;
+  max-height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  opacity: 1;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(8, 30, 23);
+}
+
+body {
+  background-color: #27d7d1;
+}
+
+.App2{
+  margin-top: 0%;
+}
+
+.App-header {
+  background-color: #27d7d1;
+  min-height: 3vh;
+  display: flex;
+  margin-top: 10%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+
+#catsOnIsland {
+  width: 70%;
+  border-radius: 10px;
+}
+
+.App-main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+ a {
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding-top: 2%;
+  color: rgb(15, 9, 189);
+  text-align: justify;
+  display: inline-block; /* Добавлено для лучшего отображения */
+  
+}
+
+.Menu1 a {
+  position: absolute;
+  cursor:pointer;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: aliceblue;
+  border-radius: 2px;
+  padding-top: 2%;
+  color: rgb(15, 9, 189);
+  text-align: justify;
+  display: inline-block; /* Добавлено для лучшего отображения */
+  
+}
+
+a:active {
+  color: #0783d5;
+  background-color: aquamarine;
+}
+
+#container {
+  background-color: #27d7d1;
+  min-height: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+
+#cats {
+  min-width: 15%;
+  max-width: 20%;
+  margin-right: 10%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#catstext {
+  margin-left: 10%;
+  width: 40%;
+}
+
+/* Медиазапрос для мобильных устройств */
+@media (max-width: 800px) {
+
+
+  .App {
+    padding: 5px; /* Уменьшен padding для мобильных */
+  }
+
+  body {
+    background-color: #27d7d1; /* Оставляем ваш красный фон */
+  }
+
+  #catsOnIsland {
+    width: 100%; /* Картинка на всю ширину */
+  }
+
+  .App-main {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+
+  #container {
+    display: flex;
+    flex-direction: column; /* ВАЖНО: вертикальное расположение */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  #cats {
+    min-width: 40%;
+    max-width: 50%;
+    margin-right: 0; /* Убираем отступ справа */
+    margin-bottom: 10px; /* Добавляем отступ снизу */
+    padding: 2px;
+  }
+   #cats:active {
+    transform: scale(1.4); /* На мобильных поменьше */
+  }
+
+  #catstext {
+    width: 90%; /* Текст почти на всю ширину */
+    margin-left: 0; /* Убираем отступ слева */
+    margin-right: 0;
+    text-align: center; /* Центрируем текст */
+    padding: 5px;
+    font-family: Comic Sans;
+  }
+}
