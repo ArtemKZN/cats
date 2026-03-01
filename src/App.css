@@ -1,0 +1,238 @@
+
+
+/* Импорт шрифта */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: radial-gradient(circle at 10% 30%, #e3a080, #9480de, #90d3b7);
+  min-height: 100vh;
+  color: #1e2b3c;
+  line-height: 1.6;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Шапка */
+.App-header {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 30px;
+  padding: 30px 20px;
+  margin: 20px 0 40px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.App-header p {
+  margin: 8px 0;
+  font-weight: 400;
+  color: #2c3e50;
+}
+
+.App-header p:first-child {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.App-header p:last-of-type {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #4a4e69;
+}
+
+/* Изображения в шапке и основном контенте */
+#catsOnIsland {
+  width: 80%;
+  max-width: 700px;
+  border-radius: 25px;
+  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.2);
+  margin: 25px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+}
+
+#catsOnIsland:hover {
+  transform: scale(1.02);
+  box-shadow: 0 25px 35px -8px rgba(0, 0, 0, 0.25);
+}
+
+/* Основной контент */
+.App-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 5%;
+}
+
+.App-main p {
+  background: rgba(95, 232, 193, 0.4);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 25px;
+  padding: 25px 30px;
+  width: 100%;
+  max-width: 900px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  font-size: 1.2rem;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.App-main p:hover {
+  background: rgba(76, 234, 224, 0.6);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Контейнер для блоков на странице Future */
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+#catstext {
+  flex: 2;
+  min-width: 280px;
+  text-align: left;
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 25px;
+  border-radius: 25px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#cats {
+  flex: 1;
+  min-width: 200px;
+  /* max-width: 300px; */
+  border-radius: 25px;
+  box-shadow: 0 15px 30px -8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+#cats:hover {
+  transform: scale(1.05) rotate(1deg);
+}
+
+/* Ссылки (меню) */
+a {
+  text-decoration: none;
+  padding: 12px 28px;
+  margin: 10px;
+  background: rgba(240, 248, 255, 0.7);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+a:hover {
+  background: rgba(255, 255, 255, 0.95);
+  color: #1a3b5d;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 20px -8px rgba(0, 0, 0, 0.2);
+  border-color: #ffffff;
+}
+
+a:active {
+  transform: translateY(0);
+  background: #e0e9f5;
+}
+
+/* Специфичные стили для меню в Menu1 (если нужно) */
+.Menu1 a {
+  position: relative; /* убираем absolute, который был */
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 40px;
+  padding: 10px 24px;
+}
+
+/* Медиазапросы для мобильных */
+@media (max-width: 800px) {
+  .App {
+    padding: 10px;
+  }
+
+  .App-header {
+    padding: 20px 10px;
+  }
+
+  .App-header p {
+    font-size: 1rem;
+  }
+
+  .App-header p:last-of-type {
+    font-size: 1.3rem;
+  }
+
+  #catsOnIsland {
+    width: 95%;
+  }
+
+  .App-main p {
+    padding: 18px 20px;
+    font-size: 1rem;
+  }
+
+  #container {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  #catstext {
+    width: 100%;
+    margin: 0;
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  #cats {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  a {
+    padding: 10px 18px;
+    font-size: 1rem;
+  }
+}
+
+/* Дополнительно: стили для страницы Future (App2) */
+.App2 {
+  margin-top: 20px;
+}
